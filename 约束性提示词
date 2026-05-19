@@ -1,0 +1,268 @@
+━━━━━━━━━━━━━━━━━━
+【最重要渲染约束（强制性）】
+
+STRICT VECTOR-LIKE ENGINEERING DRAWING STYLE
+
+整张图必须呈现为真正的矢量工程图，如同由矢量绘图引擎生成，而非 AI 扩散模型的光栅化画作。观感应完全类似于 LaTeX TikZ 图、Adobe Illustrator 技术信息图、Visio 工程蓝图、Figma 矢量面板、ACM/USENIX/IEEE 论文插图或 Linux 基金会白皮书图示。
+
+所有直线必须绝对平直。所有边框必须使用数学上均匀的线宽。所有箭头必须完全水平或垂直。每个表格单元格必须精确对齐。所有几何形状必须保持刚性并与网格对齐。
+
+统一的线宽系统：
+仅允许 0.5pt / 1pt / 2pt
+
+严禁：
+任何绘画性渲染、素描效果、光栅化标签、扩散模型般的扭曲几何、不规则的线宽、弯曲的直线、手绘外观、波浪状边框、柔和的渲染伪影。
+
+排版优先的渲染策略。
+工程可读性绝对优先于艺术表现力。
+
+优先保证：
+清晰度、精确性、布局一致性、技术可读性、图示正确性、缩放可读性。
+
+绝不优先：
+电影氛围、光照、视觉戏剧性、纹理、装饰性构图。
+
+无限缩放可读性。
+所有标签在 400% 缩放时仍须清晰可读。
+所有矩阵单元格和层级模块在局部裁剪放大后仍能独立阅读。
+
+━━━━━━━━━━━━━━━━━━
+【中文字体与文字渲染强化（强制性）】
+
+Typography-first rendering priority.
+
+所有汉字必须：
+完全可读、高对比度、矢量级锐利、无变形、基线一致、达到印刷级排版质量。
+小字号汉字也必须保持极度清晰。
+
+首选中文字体：
+思源宋体 (Source Han Serif)
+Noto Serif CJK SC
+宋体 (Songti SC)
+
+严禁：
+虚假汉字字形、残缺部首、毛笔风格字体、圆角 UI 字体、装饰字体、AI 生成的伪中文文本。
+
+所有英文技术术语必须使用：
+清晰的衬线字体或等宽字体
+矢量级锐利边缘
+统一字距
+一致的字体粗细
+
+首选英文字体：
+IBM Plex Serif
+Linux Libertine
+Source Code Pro
+
+所有文字必须呈现为真正的矢量文字。
+
+严禁：
+重复笔画、字形融化、抗锯齿模糊、扭曲的标点、低 DPI 文字。
+
+━━━━━━━━━━━━━━━━━━
+【网格与排版系统强化（强制性）】
+
+采用严格的 16 列工程网格布局。
+
+所有模块必须对齐到不可见的基线网格。
+
+所有表格单元格必须精确对齐。
+
+矩阵行与列必须严格对齐。
+
+统一的模块间距系统：
+8px / 16px / 32px / 64px
+
+无任何浮动元素。无随机偏移。无不对称对齐漂移。
+
+视觉层级必须保持结构化与模块化。
+
+按层级分段生成，并保持模块化的一致性。
+
+整个画布上的文字与线条几何保持统一。
+
+避免将信息过度压缩到难以阅读的微小区域。
+
+━━━━━━━━━━━━━━━━━━
+【目标读者与语言策略】
+
+主要阅读对象为中国人（操作系统学习者、工程师、研究人员）：
+
+- 所有标题、区域说明、关键概念均采用中英双语标注
+- 中文在上，英文在下或括号标注
+- eBPF、io_uring、CFS、sched_ext 等保留英文原词，首次出现附中文解释
+- 矩阵标签、层级图标注、总结文字均采用双语
+- 阅读动线符合中文从左到右、从上到下习惯
+
+━━━━━━━━━━━━━━━━━━
+【画布要求】
+
+超宽横幅布局：
+21:9
+32:9
+电影级超宽结构
+
+分辨率：
+8K
+16K
+超高清
+矢量级细节
+适合无限放大阅读
+
+输出视觉风格：
+SVG export style
+PDF vector blueprint style
+TikZ academic diagram style
+
+白色背景，无任何复杂背景或渐变底纹（信息区块内部允许极淡色块区分）。
+
+━━━━━━━━━━━━━━━━━━
+【整体风格】
+
+Academic engineering blueprint
+Kernel architecture diagram
+Operating system textbook illustration
+Linux internals technical map
+System architecture whitepaper figure
+
+极简
+克制
+高信息密度
+高可读性
+强结构化
+模块化布局
+矢量工程图风格
+
+大量使用：
+细线连接
+层级箭头
+模块框
+系统边界
+论文式结构标注
+
+━━━━━━━━━━━━━━━━━━
+【整体视觉规则】
+
+白色背景。
+
+模块框：
+圆角矩形（极轻微圆角）
+白底黑边
+内部文字深灰或黑色
+
+细线：
+0.5–1pt 黑线
+
+箭头：
+- 开放空心三角：流程
+- 大型空心三角：替代/继承
+- 实心细箭头：数据流
+
+仅允许平面学术渲染。
+
+严禁：
+景深、电影模糊、环境光、胶片颗粒、光晕、晕影、纸张纹理、金属纹理、3D 光照、柔和阴影。
+
+
+
+━━━━━━━━━━━━━━━━━━
+【配色规范（极简低饱和）】
+
+深蓝 #003D6B：
+矩阵时间点标题
+
+深绿 #1A6B3C：
+核心特性（如 io_uring、Rust）
+
+橙色 #C75000：
+虚拟化与容器
+
+紫色 #5C2D91：
+安全与隔离
+
+暖灰 #6B6B6B：
+内部结构、辅助注释
+
+黑色：
+文字、边框、箭头
+
+严格避免：
+荧光色、高饱和霓虹色、科技感蓝光、多余的装饰色彩。
+
+━━━━━━━━━━━━━━━━━━
+【工程制图规范（强化）】
+
+- 严格 16 列工程网格对齐
+- 矩阵行与列严格对齐，表格边框平直
+- 所有 UML 箭头样式一致
+- 模块高度与内部留白统一
+- 标题字号层级统一
+- 英文缩写首次出现必须附中英文全称
+- 区域内文字左对齐，层级图居中
+- 整体留白充足，避免压迫感
+
+━━━━━━━━━━━━━━━━━━
+【最终视觉参考】
+
+《Linux 内核设计与实现》教材插图
+《深入理解 Linux 内核》结构图
+Intel 软件优化手册 CPU 管线图
+Academic OS Diagram
+
+绝不为：
+海报、控制面板、HUD、赛博朋克、科幻 UI、游戏界面、控制室屏幕、商业广告条幅。
+
+━━━━━━━━━━━━━━━━━━
+【Negative Prompt（强化版）】
+
+cyberpunk,
+HUD,
+dashboard UI,
+futuristic interface,
+neon glow,
+dark background,
+commercial poster,
+3D hologram,
+game UI,
+busy overlapping unreadable text,
+uneven lines,
+crooked borders,
+warped tables,
+blurry typography,
+fake Chinese text,
+distorted glyphs,
+broken grid alignment,
+inconsistent line weights,
+rasterized labels,
+fuzzy microtext,
+double edges,
+handwritten effect,
+sketch effect,
+diffusion artifacts,
+melted geometry,
+curved straight lines,
+low dpi text,
+anti-aliased blur,
+misaligned arrows,
+overlapping labels,
+film grain,
+ambient lighting,
+glow effects,
+perspective distortion,
+decorative icons,
+complex textures,
+metallic frame,
+bloom,
+vignette,
+photo background,
+soft shadows,
+raster artifacts,
+pixelated elements,
+UI windows,
+console frame,
+sci-fi screen,
+decorative gradients,
+poster typography,
+calligraphy fonts,
+brush fonts,
+rounded UI fonts
